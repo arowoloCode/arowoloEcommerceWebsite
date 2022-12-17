@@ -1,0 +1,88 @@
+.signup {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  width: 100%;
+  background-color: #000000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    border: 1px solid #313338;
+    border-radius: 10px;
+    padding: 2rem;
+
+    .apiErrorMsg {
+      font-size: 12px;
+      color: #dc3545;
+    }
+  }
+
+  .form {
+    button {
+      width: 300px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      outline: none;
+      background: #007bff;
+      display: block;
+      color: #fff;
+      padding: 0.7rem;
+      border: none;
+      width: 100%;
+      cursor: pointer;
+
+      &:disabled {
+        background: #6c757d;
+        font-weight: 200;
+        cursor: initial;
+      }
+    }
+
+    &__row {
+      margin-bottom: 15px;
+
+      .error {
+        color: #dc3545;
+        font-size: 12px;
+        margin-top: 2px;
+      }
+    }
+
+    &__group {
+      label {
+        display: block;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 8px;
+      }
+      .error-label {
+        color: #dc3545;
+      }
+
+      input {
+        background: transparent;
+        outline: none;
+        border: 1px solid #313338;
+        width: 300px;
+        height: 20px;
+        border-radius: 5px;
+        padding: 0.5rem;
+        color: #fff;
+
+        &.error-text {
+          border: 1px solid #dc3545;
+        }
+      }
+    }
+  }
+}
